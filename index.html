@@ -12,16 +12,18 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-expand-md sticky-top shadow" style="background-color:blanchedalmond">
+        <nav class="navbar navbar-expand-lg navbar-expand-md sticky-top shadow">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a href="#" class="navbar-brand d-none d-lg-block d-md-block">
-                    In A Box</a>
-                <a href="#" class="navbar-brand d-lg-none d-md-none">
-                    In A Box</a>
+                <a href="index.html" class="navbar-brand d-none d-lg-block d-md-block">
+                    <img src="Images/logo.svg" alt="In A Box Logo" height="40">
+                </a>
+                <a href="index.html" class="navbar-brand d-lg-none d-md-none">
+                    <img src="Images/logo.svg" alt="In A Box Logo" height="40">
+                </a>
                 <a class="btn btn-warning text-white navbar-login d-lg-none d-md-none" href="Login.html">
                     <svg
                         xmlns="http://www.w3.org/2000/svg" height="1em" viewbox="0 0 512 512">
@@ -335,44 +337,33 @@
         <div class="container-fluid">
             <!-- Hero -->
             <div class="row">
-                <!-- Hero -->
+                <!-- Desktop/Tablet Hero -->
                 <div class="p-5 text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-image d-none d-lg-block d-md-block" id="hero-img">
-                    <div class="mask">
-
-                        <div class="d-flex d-none d-lg-block d-md-block w-25">
-                        <div class="h3 py-3" style="text-shadow: 2px;">
-                            <h1 class="mb-3">Welcome From In A Box</h1>
-                            <h4 class="mb-3" style="color: lightgoldenrodyellow;"> 
-                                Delightful meal kit deliveries will bring culinary excellence to your doorstep.
-
-                            </h4>
-                            <a class="btn btn-outline-light btn-lg px-4" href="Login.html" role="button" id="startnow"> Start Now </a>
+                    <div class="mask d-flex align-items-center justify-content-center min-vh-50">
+                        <div class="hero-content">
+                            <h1>Welcome to In A Box</h1>
+                            <h4>Delightful meal kit deliveries will bring culinary excellence to your doorstep.</h4>
+                            <a class="btn btn-warning btn-lg px-4" href="Login.html" role="button" id="startnow">Start Now</a>
                         </div>
-                        </div>
-                        
-                    
                     </div>
                 </div>
+
+                <!-- Mobile Hero -->
                 <div class="p-5 text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-image d-lg-none d-md-none" id="hero-img-sm">
-                    <div class="mask">
-                        <div class="d-flex w-20">
-                            <div class="" style="text-shadow: 2px; padding-bottom: 3px;">
-                            <h2 class="mb-3 fw-bolder text-light">Welcome From In A Box</h2>
-                            <h6 class="mb-3" style="color: lightgoldenrodyellow;"> 
-                                Delightful meal kit deliveries will bring culinary excellence to your doorstep.
-                            </h6>
-                            <a class="btn btn-outline-light btn-lg" href="Login.html" role="button" id="startnow">Start Now</a>
-                            </div>
+                    <div class="mask d-flex align-items-center justify-content-center min-vh-50">
+                        <div class="hero-content-mobile">
+                            <h2>Welcome to In A Box</h2>
+                            <h6>Delightful meal kit deliveries will bring culinary excellence to your doorstep.</h6>
+                            <a class="btn btn-warning btn-lg" href="Login.html" role="button" id="startnow">Start Now</a>
                         </div>
-                    
                     </div>
                 </div>
             </div>
             <!-- Hero -->
             
             <!-- Services -->
-            <div class="row">
-                <h1 class="text-center py-2 display-4"> Services & Product Offers</h1>
+            <div class="row py-4">
+                <h2 class="text-center">Services & Product Offers</h2>
             </div>
 
             <section class="container py-3">
@@ -381,21 +372,21 @@
                     <div class="col-12 col-md-4 col-lg-4 card border-0 mx-3 my-2 shadow px-0" style="width: 300px;">
                         <img class="card-img-top rounded-0 shadow py-0 px-0" src="Images/Instant-Pot-Recipes.jpg" alt="Card image" height="200px">
                         <div class="card-body">
-                            <h4 class="card-title text-center"> Recipes </h4>
+                            <h5 class="card-title text-center">Recipes</h5>
                         </div>
                     </div>
 
                     <div class="col-12 col-md-4 col-lg-4 card border-0 mx-3 shadow my-2 px-0" style="width: 300px;">
                         <img class="card-img-top rounded-0 shadow" src="Images/sets.jpg" alt="Card image" height="200px" >
                         <div class="card-body">
-                            <h4 class="card-title text-center"> Bake At Home Set </h4>
+                            <h5 class="card-title text-center">Bake At Home Set</h5>
                         </div>
                     </div>
 
                     <div class="col-12 col-md-4 col-lg-4 card border-0 mx-3 shadow my-2 px-0" style="width: 300px;">
                         <img class="card-img-top rounded-0 shadow" src="Images/ing.jpg" alt="Card image" height="200px">
                         <div class="card-body">
-                            <h4 class="card-title text-center"> Ingredients </h4>
+                            <h5 class="card-title text-center">Ingredients</h5>
                         </div>
                     </div>
 
@@ -404,8 +395,8 @@
             <!-- Services -->
 
             <!-- Others -->
-            <div class="row">
-                <h1 class="text-center py-1 display-4"> Others </h1>
+            <div class="row py-4">
+                <h2 class="text-center">Others</h2>
             </div>
             <section class="container py-3">
                 <div class="row justify-content-center">
@@ -413,28 +404,28 @@
                     <div class="col-12 col-md-6 col-lg-3 card border-0 shadow px-0 mx-2 my-4" style="width: 260px;">
                         <img class="card-img-top rounded-0" src="Images/planner.png" alt="Card image" height="170px">
                         <div class="card-body">
-                            <h4 class="card-title text-center"> Meal Planner </h4>
+                            <h5 class="card-title text-center">Meal Planner</h5>
                         </div>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-3 card border-0 shadow px-0 mx-2 my-4" style="width: 260px;">
                         <img class="card-img-top rounded-0" src="Images/Nutritional info.jpg" alt="Card image" height="170px">
                         <div class="card-body">
-                            <h4 class="card-title text-center"> Nutritional Information App </h4>
+                            <h5 class="card-title text-center">Nutritional Information App</h5>
                         </div>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-3 card border-0 shadow px-0 mx-2 my-4" style="width: 260px;">
                         <img class="card-img-top rounded-0" src="Images/wc.jpg" alt="Card image" height="170px">
                         <div class="card-body">
-                            <h4 class="card-title text-center"> Selection Of Weekly Recipes </h4>
+                            <h5 class="card-title text-center">Selection Of Weekly Recipes</h5>
                         </div>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-3 card border-0 shadow px-0 mx-2 my-4" style="width: 260px;">
                         <img class="card-img-top rounded-0" src="Images/food-gift-box-1631555072.jpg" alt="Card image" height="170px">
                         <div class="card-body">
-                            <h4 class="card-title text-center"> Gift Box </h4>
+                            <h5 class="card-title text-center">Gift Box</h5>
                         </div>
                     </div>
                 </div>  

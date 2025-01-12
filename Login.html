@@ -19,10 +19,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a href="#" class="navbar-brand d-none d-lg-block d-md-block">
-                    In A Box</a>
-                <a href="#" class="navbar-brand d-lg-none d-md-none">
-                    In A Box</a>
+                <a href="index.html" class="navbar-brand d-none d-lg-block d-md-block">
+                    <img src="Images/logo.svg" alt="In A Box Logo" height="40">
+                </a>
+                <a href="index.html" class="navbar-brand d-lg-none d-md-none">
+                    <img src="Images/logo.svg" alt="In A Box Logo" height="40">
+                </a>
                 <a class="btn btn-warning text-white navbar-login d-lg-none d-md-none" href="Login.html">
                     <svg
                         xmlns="http://www.w3.org/2000/svg" height="1em" viewbox="0 0 512 512">
@@ -336,56 +338,65 @@
         <div class="pt-4">
 
         </div>
-        <section class="vh-100">
-            <div class="container shadow">
-              <div class="row">
-                <div class="col-sm-6 px-0 d-none d-sm-block">
-                    <img src="Images/login.jpg"
-                      alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
-                  </div>
-                <div class="col-sm-6 text-black">
-          
-                  <div class="px-4 ms-xl-4">
-                    <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style="color: #709085;"></i>
-                    <span class="h1 fw-bold mb-0">Login</span>
-                  </div>
-          
-                  <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-          
-                    <form style="width: 23rem;">
-                    
-                      <div class="form-outline mb-4">
-                        <label class="form-label" for="form2Example18">Email address</label>
-                        <input type="email" id="form2Example18" class="form-control form-control-lg" required />
-                      </div>
-          
-                      <div class="form-outline mb-4">
-                        <label class="form-label" for="form2Example28">Password</label>
-                        <input type="password" id="form2Example28" class="form-control form-control-lg" required />
-                      </div>
-          
-                      <div class="form-check mb-4">
-                        <input type="checkbox" name="remember" class="form-check-input shadow" id="flexCheck" style="border: 1px solid black;">
-                        <label class="form-check-label" for="flexCheck"> Remember Me </label>
-                      </div>
+        <section class="container py-5">
+            <div class="row justify-content-center align-items-center min-vh-75">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card border-0 shadow-lg rounded-3 overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-md-5 d-none d-md-block">
+                                <img src="Images/login.jpg" alt="Login" 
+                                    class="img-fluid h-100 object-fit-cover">
+                            </div>
+                            <div class="col-md-7 bg-white">
+                                <div class="card-body p-4 p-lg-5">
+                                    <div class="text-center mb-4">
+                                        <h2 class="fw-bold mb-1">Welcome Back!</h2>
+                                        <p class="text-muted">Please login to your account</p>
+                                    </div>
 
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="emailInput" 
+                                                placeholder="name@example.com" required>
+                                            <label for="emailInput">Email address</label>
+                                        </div>
 
-                      <div class="pt-1 mb-4 d-flex flex-column justify-content-center">
-                        <button class="btn btn-info btn-lg btn-block" type="submit">Login</button>
-                      </div>
-          
-                      <p class="small mb-3 pb-lg-2"><a class="text-muted" href="#">Forgot password?</a></p>
-                      <p>Don't have an account yet? <a href="SignUp.html" class="link-info">Register here</a></p>
-          
-                    </form>
-          
-                  </div>
-          
+                                        <div class="form-floating mb-3">
+                                            <input type="password" class="form-control" id="passwordInput" 
+                                                placeholder="Password" required>
+                                            <label for="passwordInput">Password</label>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between align-items-center mb-4">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                                <label class="form-check-label text-muted" for="rememberMe">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                            <a href="#" class="text-primary text-decoration-none">Forgot password?</a>
+                                        </div>
+
+                                        <button class="btn btn-primary w-100 mb-3 py-3" type="submit">
+                                            Login
+                                        </button>
+
+                                        <div class="text-center">
+                                            <p class="text-muted mb-0">
+                                                Don't have an account? 
+                                                <a href="SignUp.html" class="text-primary text-decoration-none">
+                                                    Register here
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-               
-              </div>
             </div>
-          </section>
+        </section>
 
         <!-- Content -->
         <!-- Footer -->

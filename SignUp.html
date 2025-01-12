@@ -19,10 +19,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a href="#" class="navbar-brand d-none d-lg-block d-md-block">
-                    In A Box</a>
-                <a href="#" class="navbar-brand d-lg-none d-md-none">
-                    In A Box</a>
+                <a href="index.html" class="navbar-brand d-none d-lg-block d-md-block">
+                    <img src="Images/logo.svg" alt="In A Box Logo" height="40">
+                </a>
+                <a href="index.html" class="navbar-brand d-lg-none d-md-none">
+                    <img src="Images/logo.svg" alt="In A Box Logo" height="40">
+                </a>
                 <a class="btn btn-warning text-white navbar-login d-lg-none d-md-none" href="Login.html">
                     <svg
                         xmlns="http://www.w3.org/2000/svg" height="1em" viewbox="0 0 512 512">
@@ -336,57 +338,67 @@
         <div class="pt-4">
 
         </div>
-        <section class="vh-100">
-            <div class="container shadow">
-              <div class="row">
-                <div class="col-sm-6 px-0 d-none d-sm-block">
-                    <img src="Images/login.jpg"
-                      alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
-                  </div>
-                <div class="col-sm-6 text-black">
-          
-                  <div class="px-4 ms-xl-4">
-                    <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style="color: #709085;"></i>
-                    <span class="h1 fw-bold mb-0">Sign Up</span>
-                  </div>
-          
-                  <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-          
-                    <form style="width: 23rem;">
-                    
-                      <div class="form-outline mb-2">
-                        <label class="form-label" for="form2Example18"> First Name </label>
-                        <input type="text" id="form2Example18" class="form-control form-control-lg" required/>
-                      </div>
+        <section class="container py-5">
+            <div class="row justify-content-center align-items-center min-vh-75">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card border-0 shadow-lg rounded-3 overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-lg-12 d-none d-md-block">
+                                <img src="Images/login.jpg" alt="Sign Up" 
+                                    class="img-fluid h-100 object-fit-cover">
+                            </div>
+                            <div class="col-lg-12 bg-white">
+                                <div class="card-body p-4 p-lg-5">
+                                    <div class="text-center mb-4">
+                                        <h2 class="fw-bold mb-1">Create Account</h2>
+                                        <p class="text-muted">Join our culinary community</p>
+                                    </div>
 
-                      <div class="form-outline mb-2">
-                        <label class="form-label" for="form2Example18"> Last Name </label>
-                        <input type="text" id="form2Example18" class="form-control form-control-lg" required />
-                      </div>
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="firstNameInput" 
+                                                placeholder="John" required>
+                                            <label for="firstNameInput">First Name</label>
+                                        </div>
 
-                      <div class="form-outline mb-2">
-                        <label class="form-label" for="form2Example18">Email address</label>
-                        <input type="email" id="form2Example18" class="form-control form-control-lg" required />
-                      </div>
-          
-                      <div class="form-outline mb-4">
-                        <label class="form-label" for="form2Example28">Password</label>
-                        <input type="password" id="form2Example28" class="form-control form-control-lg" required />
-                      </div>
-          
-                      <div class="pt-1 mb-4 d-flex flex-column justify-content-center">
-                        <button class="btn btn-info btn-lg btn-block" type="submit"> Sign Up</button>
-                      </div>
-          
-                    </form>
-          
-                  </div>
-          
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="lastNameInput" 
+                                                placeholder="Doe" required>
+                                            <label for="lastNameInput">Last Name</label>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="emailInput" 
+                                                placeholder="name@example.com" required>
+                                            <label for="emailInput">Email address</label>
+                                        </div>
+
+                                        <div class="form-floating mb-4">
+                                            <input type="password" class="form-control" id="passwordInput" 
+                                                placeholder="Password" required>
+                                            <label for="passwordInput">Password</label>
+                                        </div>
+
+                                        <button class="btn btn-primary w-100 mb-3 py-3" type="submit">
+                                            Create Account
+                                        </button>
+
+                                        <div class="text-center">
+                                            <p class="text-muted mb-0">
+                                                Already have an account? 
+                                                <a href="Login.html" class="text-primary text-decoration-none">
+                                                    Login here
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-               
-              </div>
             </div>
-          </section>
+        </section>
 
         <!-- Content -->
         <!-- Footer -->

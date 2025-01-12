@@ -4,7 +4,7 @@ body{
 }
 
 #mynav{
-    background-color: blanchedalmond;
+    background-color: aqua;
 }
 #myfooter{
     background-color: wheat;
@@ -32,19 +32,19 @@ body{
 
 
 #hero-img{
-    background: url('../Images/BG.png') no-repeat;
+    background: url('../Images/hero-bg.png') no-repeat;
     background-size: cover;
     height: 500px;
     position: relative;
     color: rgb(17, 230, 159);
 }
 #hero-img-sm{
-    background: url('../Images/BG.png') no-repeat;
+    background: url('../Images/hero-bg.png') no-repeat;
     background-size: cover;
-    background
+    height: 500px;
+    position: relative;
     color: rgb(17, 230, 159);
     width: 100%;
-
 }
 .bgimage {
     width:100%;
@@ -103,11 +103,15 @@ label{
 }
 
 #startnow{
-    background-color: rgb(196, 23, 23);
+    background-color: #ffc107;
+    border: none;
+    color: #000;
+    font-weight: 500;
 }
 
 #startnow:hover{
-    background-color: rgb(160, 16, 16);
+    background-color: #e0a800;
+    color: #000;
 }
 
 button::selection{
@@ -135,4 +139,362 @@ button::selection{
 
 .btn-nocolor{
     background-color: none;
+}
+
+/* Add these styles for the hero section */
+.hero-content, .hero-content-mobile {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h1, 
+.hero-content-mobile h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero-content h4,
+.hero-content-mobile h6 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Media queries for responsive hero text */
+@media (max-width: 768px) {
+    .hero-content-mobile {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+    
+    .hero-content-mobile h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-content-mobile h6 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content-mobile {
+        padding: 1rem;
+    }
+    
+    .hero-content-mobile h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content-mobile h6 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Update navbar styles */
+.navbar {
+    background-color: #fff8f0 !important; /* Light warm background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Style navbar brand */
+.navbar-brand {
+    color: #e65100 !important; /* Deep orange */
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Style navbar links */
+.nav-link {
+    color: #795548 !important; /* Warm brown */
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #e65100 !important; /* Deep orange on hover */
+}
+
+/* Style dropdown menu */
+.dropdown-menu {
+    background-color: #fff8f0;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dropdown-item:hover {
+    background-color: #ffe0b2; /* Light orange background on hover */
+    color: #e65100;
+}
+
+/* Update login button */
+.navbar-login-lg {
+    background-color: #ff9800 !important; /* Orange */
+    color: #fff !important;
+    border: none;
+}
+
+.navbar-login-lg:hover {
+    background-color: #f57c00 !important; /* Darker orange on hover */
+}
+
+/* Mobile navbar toggler */
+.navbar-toggler {
+    border-color: #795548;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(121, 85, 72, 0.25);
+}
+
+/* Gift box page styles */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* Gift box card styles */
+.gift-box-card {
+    transition: transform 0.2s;
+}
+
+.gift-box-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #e65100;
+    border-color: #e65100;
+}
+
+.btn-primary:hover {
+    background-color: #f57c00;
+    border-color: #f57c00;
+}
+
+/* Text styles */
+.fs-6 {
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gift-box-card img {
+        height: 250px !important;
+    }
+}
+
+/* About page styles */
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #e65100;
+    border-radius: 1rem;
+    border: none;
+}
+
+.divider-custom .divider-custom-icon {
+    color: #e65100;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+.value-card {
+    transition: transform 0.2s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-item h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 768px) {
+    .stat-item h2 {
+        font-size: 2rem;
+    }
+    
+    .stat-item p {
+        font-size: 1rem;
+    }
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #e65100;
+    border-color: #e65100;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #f57c00;
+    border-color: #f57c00;
+}
+
+/* Login/Signup styles */
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* Form styles */
+.form-floating > label {
+    color: #6c757d;
+}
+
+.form-control:focus {
+    border-color: #e65100;
+    box-shadow: 0 0 0 0.25rem rgba(230, 81, 0, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: #e65100;
+    border-color: #e65100;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #e65100;
+    border-color: #e65100;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f57c00;
+    border-color: #f57c00;
+    transform: translateY(-1px);
+}
+
+/* Card styles */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 2rem !important;
+    }
+}
+
+/* Text styles */
+.text-primary {
+    color: #e65100 !important;
+}
+
+.text-primary:hover {
+    color: #f57c00 !important;
+}
+
+/* Meal Planner styles */
+.btn-preference {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.btn-preference:hover {
+    transform: translateY(-2px);
+}
+
+.btn-preference.active {
+    background-color: #e65100;
+    color: white;
+    border-color: #e65100;
+}
+
+.plan-option .btn-group {
+    gap: 0.5rem;
+}
+
+.plan-option .btn {
+    border-radius: 0.5rem !important;
+    padding: 0.75rem;
+}
+
+.price-summary {
+    border-left: 4px solid #e65100;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(230, 81, 0, 0.1);
+    border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .btn-preference {
+        padding: 0.75rem;
+    }
+    
+    .plan-option .btn {
+        padding: 0.5rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-group {
+        flex-wrap: wrap;
+    }
+    
+    .btn-group .btn {
+        flex: 1 0 30%;
+    }
 }
