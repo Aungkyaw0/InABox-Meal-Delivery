@@ -1,6 +1,6 @@
 # 🎁 In A Box - Meal Kit Delivery Website
 
-A responsive web application for a meal kit delivery service built with HTML5, Bootstrap 5, and JavaScript.
+A responsive web application for a meal kit delivery service built with HTML5, CSS3, Bootstrap 5, and JavaScript. This project is my first bootstrap project and just a educational project. 
 
 ## 📋 Overview
 
